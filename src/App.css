@@ -1,0 +1,23 @@
+.App {
+  width: 100svw;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  background: #f4f4f4;
+  margin: 0 auto;
+}
+
+.question {
+  height: 90vh;
+  border-radius: 7px;
+}
+
+.change {
+  background-color: #f4f4f4;
+  padding: 10px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
