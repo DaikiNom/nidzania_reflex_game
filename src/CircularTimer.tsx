@@ -15,8 +15,8 @@ const CircularTimer: React.FC<CircularTimerProps> = ({ duration, onComplete }) =
             return;
         }
         const timerId = setInterval(() => {
-            setTimeLeft(timeLeft - 1);
-        }, 1000);
+            setTimeLeft(timeLeft - 0.25);
+        }, 250);
 
         return () => clearInterval(timerId);
     }, [timeLeft, onComplete]);

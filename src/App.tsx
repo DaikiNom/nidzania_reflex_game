@@ -79,8 +79,10 @@ function App() {
 
   const handleChangeImage = () => {
     setIsWaiting(true);
+    setRand(imgSrc[Math.floor(Math.random() * imgSrc.length)]);
+    const img = new Image();
+    img.src = rand.src;
     setTimeout(() => {
-      setRand(imgSrc[Math.floor(Math.random() * imgSrc.length)]);
       setIsWaiting(false);
     }, 3000);
   };
@@ -91,7 +93,7 @@ function App() {
           <CardContent>
             {
               isWaiting ? (
-                <CircularTimer duration={3} onComplete={() => setIsWaiting(false)} />
+                <CircularTimer duration={3.25} onComplete={() => setIsWaiting(false)} />
               ) : (
                 <img src={rand.src} alt={rand.alt} className="question" />
               )
