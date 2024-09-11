@@ -113,7 +113,7 @@ function App() {
           </CardContent>
         </Card>
       </div>
-      <Button className='change' rounded size='large' onClick={handleChangeImage}>next</Button>
+      <Button className='change' rounded disabled={isWaiting} size='large' onClick={handleChangeImage}>next</Button>
     </>
   )
 }
