@@ -1,5 +1,5 @@
 .App {
-  width: 100svw;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,7 +11,7 @@
 }
 
 .question {
-  height: 90vh;
+  height: 90dvh;
   border-radius: 7px;
 }
 
