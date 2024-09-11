@@ -12,6 +12,9 @@ npm install
 npm run build
 ```
 
+## Thanks
+This app is using a sound effect from [OtoLogic](https://otologic.jp/)(CC BY 4.0).
+
 ## License
 This repo is under the AGPL-3.0 license. See the [LICENSE](LICENSE) file for details.  
 Copyright (c) 2024 [Daiki Nomura](https://daikinomura.tech)

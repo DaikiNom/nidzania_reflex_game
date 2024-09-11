@@ -3,6 +3,8 @@ import CircularTimer from './CircularTimer'
 import { useState } from 'react'
 import { Button, Card, CardContent } from 'ui-neumorphism'
 import 'ui-neumorphism/dist/index.css'
+import useSound from 'use-sound';
+import start from './assets/start.mp3';
 import cone_yellow from './assets/cone_yellow.png'
 import cone_red from './assets/cone_red.png'
 import container_red from './assets/container_red.png'
@@ -76,6 +78,7 @@ function App() {
   // 画像の表示をランダムにする
   const [rand, setRand] = useState(imgSrc[Math.floor(Math.random() * imgSrc.length)]);
   const [isWaiting, setIsWaiting] = useState(false);
+  const [play] = useSound(start);
 
   const handleChangeImage = () => {
     setIsWaiting(true);
@@ -83,6 +86,9 @@ function App() {
     const img = new Image();
     img.src = rand.src;
     setTimeout(() => {
+      // start sound
+      play();
+      // 画像を表示
       setIsWaiting(false);
     }, 3000);
   };

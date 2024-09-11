@@ -11,7 +11,14 @@
 }
 
 .question {
-  height: 90dvh;
+  @supports (height: 90dvh) {
+    height: 90dvh;
+  }
+
+  @supports not (height: 90dvh) {
+    height: 90vh;
+  }
+
   border-radius: 7px;
 }
 
