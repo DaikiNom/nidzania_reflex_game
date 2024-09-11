@@ -100,8 +100,8 @@ function App() {
             }
           </CardContent>
         </Card>
-        <Button className='change' rounded size='large' onClick={handleChangeImage}>next</Button>
       </div>
+      <Button className='change' rounded size='large' onClick={handleChangeImage}>next</Button>
     </>
   )
 }
