@@ -82,16 +82,22 @@ function App() {
 
   const handleChangeImage = () => {
     setIsWaiting(true);
-    setRand(imgSrc[Math.floor(Math.random() * imgSrc.length)]);
+    // 新しいランダムな画像を選ぶ
+    const newImageSrc = imgSrc[Math.floor(Math.random() * imgSrc.length)];
+    setRand(newImageSrc);
+
+    // 新しい画像をプリロードする
     const img = new Image();
-    img.src = rand.src;
-    setTimeout(() => {
-      // start sound
-      play();
-      // 画像を表示
-      setIsWaiting(false);
-    }, 3000);
+    img.src = newImageSrc.src;
+    img.onload = () => {
+      // 画像がロードされた後に音を鳴らして画像を表示
+      setTimeout(() => {
+        play();
+        setIsWaiting(false);
+      }, 3000);
+    };
   };
+
   return (
     <>
       <div className="App">
