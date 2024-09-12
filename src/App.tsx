@@ -9,14 +9,17 @@ import cone_yellow from './assets/cone_yellow.png'
 import cone_red from './assets/cone_red.png'
 import container_red from './assets/container_red.png'
 import container_yellow from './assets/container_yellow.png'
+import gear_pink from './assets/gear_pink.png'
 import gear_purple from './assets/gear_purple.png'
 import hammer from './assets/hammer.png'
 import nut_blue from './assets/nut_blue.png'
 import nut_orange from './assets/nut_orange.png'
 import screw_blue from './assets/screw_blue.png'
 import screw_limegreen from './assets/screw_limegreen.png'
+import screw_white from './assets/screw_white.png'
 import screwdriver from './assets/screwdriver.png'
 import trashcan from './assets/trashcan.png'
+import robot from './assets/robot.png'
 import wrench from './assets/wrench.png'
 
 function App() {
@@ -37,6 +40,10 @@ function App() {
     {
       src: container_yellow,
       alt: 'container_yellow',
+    },
+    {
+      src: gear_pink,
+      alt: 'gear_pink',
     },
     {
       src: gear_purple,
@@ -63,12 +70,20 @@ function App() {
       alt: 'screw_limegreen',
     },
     {
+      sec: screw_white,
+      alt: 'screw_white',
+    },
+    {
       src: screwdriver,
       alt: 'screwdriver',
     },
     {
       src: trashcan,
       alt: 'trashcan',
+    },
+    {
+      src: robot,
+      alt: 'robot',
     },
     {
       src: wrench,
