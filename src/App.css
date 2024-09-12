@@ -12,11 +12,11 @@
 
 .question {
   @supports (height: 90dvh) {
-    height: 90dvh;
+    height: min(90dvh, 90dvw);
   }
 
   @supports not (height: 90dvh) {
-    height: 90vh;
+    height: min(90vh, 90vw);
   }
 
   border-radius: 7px;
