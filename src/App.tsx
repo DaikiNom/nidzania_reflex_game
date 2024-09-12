@@ -93,7 +93,7 @@ function App() {
   // 画像の表示をランダムにする
   const [rand, setRand] = useState(imgSrc[Math.floor(Math.random() * imgSrc.length)]);
   const [isWaiting, setIsWaiting] = useState(false);
-  const [play] = useSound(start);
+  const [play] = useSound(start, { preload: true });
 
   const handleChangeImage = () => {
     setIsWaiting(true);
