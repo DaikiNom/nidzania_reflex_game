@@ -70,7 +70,7 @@ function App() {
       alt: 'screw_limegreen',
     },
     {
-      sec: screw_white,
+      src: screw_white,
       alt: 'screw_white',
     },
     {
