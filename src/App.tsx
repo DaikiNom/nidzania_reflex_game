@@ -90,7 +90,7 @@ function App() {
       alt: 'wrench',
     },
   ];
-  // 画像の表示をランダムにする
+  // hookを使って状態管理
   const [rand, setRand] = useState(imgSrc[Math.floor(Math.random() * imgSrc.length)]);
   const [isWaiting, setIsWaiting] = useState(false);
   const [play] = useSound(start, { preload: true });

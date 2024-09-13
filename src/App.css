@@ -3,22 +3,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #f9f9f9;
 }
 
 .card {
   background: #f4f4f4;
-  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .question {
-  @supports (height: 90dvh) {
-    height: min(90dvh, 90dvw);
-  }
-
-  @supports not (height: 90dvh) {
-    height: min(90vh, 90vw);
-  }
-
+  height: min(90vh, 90vw);
   border-radius: 7px;
 }
 
